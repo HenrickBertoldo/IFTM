@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        button {
+            margin-right: 10px;
+        }
+
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário HTML</title>
 </head>
 <body>
-<h1>Formulário HTML</h1>    
+<h1 style="text-align: center;">Formulário HTML</h1>   
+<fieldset style="background-color: rgb(226, 228, 227);"> 
     <form>
         <label for="nome">Nome:</label>
         <input type="text" placeholder="Digite seu nome completo" required>
@@ -45,7 +56,8 @@
         <label>Página pessoal:</label>
         <input type="url" placeholder="https://www.exemplo.com">
         <br><br>
-        <button type="submit">Cadastrar</button><button type="reset">Limpar Tudo</button>
-    </form>    
+        <button type="submit" style="background-color: lightgreen;">Cadastrar</button><button type="reset" style="background-color: lightcoral;">Limpar Tudo</button>
+    </form>  
+    </fieldset>  
 </body>
 </html>
