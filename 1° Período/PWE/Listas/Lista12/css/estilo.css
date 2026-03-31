@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    margin: 0px;
+    border-top: 10px solid #00124A;
+    font-family: sans-serif;
+  }
+  
+  header {
+    line-height: 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin: 20px;
+    transition: all 0.3s;
+  }
+  
+  header h1:hover {
+    letter-spacing: 2px;
+  }
+  
+  header p {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  header p:hover {
+    letter-spacing: 2px;
+  }
+  
+  header nav {
+    background-color: #538114;
+  }
+  
+  header ul {
+    width: 1000px;
+    list-style: none;
+    margin: auto;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    color: red;
+  }
+  
+  header table {
+    padding: 10px;
+    width: 1200px;
+    margin: auto;
+  }
+  
+  header table td {
+    padding: 10px;
+  }
+  
+  main h2 {
+    transition: all 0.3s;
+  }
+  
+  main h2:hover {
+    letter-spacing: 2px;
+  }
+  
+  main p {
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  
+  main section {
+    width: 1200px;
+    margin: auto;
+    display: flow-root;
+    padding: 60px 10px;
+  }
+  
+  main section:nth-child(1) img {
+    float: left;
+    margin: 10px 40px 20px 0px;
+  }
+  
+  main section:nth-child(1) p {
+    margin: 20px 0px;
+    text-align: justify;
+  }
+  
+  main section:nth-child(1) ul {
+    margin-left: 40px;
+    float: left;
+  }
+  
+  main section:nth-of-type(2), main section:nth-of-type(4) {
+    background-color: #BFE38E;
+    width: 100%;
+  }
+  
+  main section:nth-of-type(2) p,
+  main section:nth-of-type(2) h2,
+  main section:nth-of-type(4) p,
+  main section:nth-of-type(4) h2 {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  main section:nth-child(3) h2 {
+    width: 1200px;
+    margin: auto;
+  }
+  
+  main section:nth-child(3) table {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  main section:nth-child(3) table td {
+    padding: 20px;
+  }
+  
+  main section:nth-child(3) table th {
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+  }
+  
+  main section:nth-child(3) table th p {
+    text-align: center !important;
+  }
+  
+  main section:nth-child(3) table p {
+    margin: 10px 0px;
+  }
+  
+  main section:nth-child(3) table tr:nth-of-type(3) {
+    background-color: darkgreen;
+  }
+  
+  main section:nth-child(3) table a:link,
+  main section:nth-child(3) table a:visited {
+    color: white;
+  }
+  
+  main section:nth-child(3) table tr:nth-of-type(2) {
+    vertical-align: top;
+  }
+  
+  section form input, section form select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  section form select, section form input[type="date"], section form input:nth-of-type(2) {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+  section form input[type="email"] {
+    width:100%;
+  }
+  
+  section form input[type="email"]:focus {
+    background-color: yellow;
+  }
+  
+  section form {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  section form label {
+    display: block;
+    margin: 10px 0px;
+  }
+  
+  section form input[type="submit"], section form input[type="reset"] {
+    width:49%;
+    background-color: #8fbc4f;
+    color: white;
+    border:none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  section form input[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  section form input[type="reset"]:hover {
+    background-color: red;
+  }
+  
+  summary {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  footer {
+    background-color: #00134A;
+    color: white;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer legend,
+  label {
+  
+    padding-right: 10px;
+  }
+  
+  
+  footer input[type="button"]:hover {
+    background-color: #9faa91;
+    color: white;
+  }
+  
+  
+  footer ul li a {
+    text-decoration: none;
+  }
+  
+  footer table {
+    width: 1000px;
+    margin: auto;
+  }
+  
+  footer table td {
+    background-color: #00134A;
+  }
+  footer table td:nth-of-type(1) {
+    width: 200px;
+  }
+  
+  /* Corpo docente, disciplinas ... */
+  /* section:nth-of-type(2) table tr:first-child td p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold !important;
+    margin:0px;
+  } */
