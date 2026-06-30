@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    background-image: url(IMG/logo.png), url(IMG/30.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 8px 20px rgba(29, 66, 138, 0.4);
+}
+
+ul li a:link,
+ul li a:visited {
+    text-decoration: none;
+    padding: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    color: rgb(29, 66, 138);
+    font-weight: bold;
+}
+
+ul li a:hover,
+ul li a:focus-visible {
+    color: rgb(255, 199, 44);
+    background-color: rgb(29, 66, 138);
+}
+
+main > h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.h1E {
+    text-align: start;
+    padding-left: 98px;
+    padding-top: 60px;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 9px;
+    color: rgb(255, 199, 44);
+    text-shadow: 0px 0px 2px rgba(0, 0, 10, 1);
+    animation-name: DeslizarDaEsquerda;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.h1D {
+    text-align: end;
+    padding-right: 98px;
+    padding-top: 60px;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 9px;
+    color: rgb(255, 199, 44);
+    text-shadow: 0px 0px 2px rgba(0, 0, 10, 1);
+    animation-name: DeslizarDaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Modificadores para substituir os antigos estilos inline */
+.h1E--azul {
+    color: rgb(29, 66, 138);
+    margin-left: 30px;
+}
+
+.h1E--vermelho {
+    color: red;
+}
+
+.h1D--vermelho {
+    color: red;
+}
+
+.h1D--azul {
+    color: rgb(29, 66, 138);
+}
+
+.h1D--recuada {
+    margin-right: 47px;
+}
+
+.curry-fotoE {
+    margin-top: 20px;
+    margin-left: 98px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    animation-name: DeslizarDaEsquerda;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.curry-fotoD {
+    margin-top: 20px;
+    margin-right: 98px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    animation-name: DeslizarDaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.curry-fotoD--espacada {
+    margin-right: 140px;
+}
+
+.conteudo-sobreE {
+    margin-right: auto;
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.conteudo-sobreD {
+    max-width: 1000px;
+    margin-left: auto;
+    justify-content: end;
+    display: flex;
+    gap: 40px;
+}
+
+.resumoE {
+    padding-top: 40px;
+    font-family: "Roboto Mono", monospace;
+    animation-name: DeslizarDaEsquerda;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.resumoD {
+    padding-top: 40px;
+    font-family: "Roboto Mono", monospace;
+    animation-name: DeslizarDaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes DeslizarDaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes DeslizarDaDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+footer {
+    background-image: url(IMG/logo.png), url(IMG/30.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: white;
+    box-shadow: 0px -8px 20px rgba(29, 66, 138, 0.4);
+}
+
+.footer-texto {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(29, 66, 138);
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.curry-fotoE,
+.curry-fotoD {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+        background-position: calc(50% - 45px) 10px, calc(50% + 45px) 10px;
+        background-size: 50px, 50px;
+        padding-top: 80px;
+    }
+
+    ul li a:link,
+    ul li a:visited {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .h1E,
+    .h1D {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .conteudo-sobreE,
+    .conteudo-sobreD {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .curry-fotoE,
+    .curry-fotoD,
+    .curry-fotoD--espacada {
+        margin: 20px 0 0 0 !important;
+        max-width: 90%;
+        height: auto;
+        order: 2;
+    }
+
+    .resumoE,
+    .resumoD {
+        padding-top: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    footer {
+        flex-direction: column;
+        background-position: calc(50% - 40px) 10px, calc(50% + 40px) 10px;
+        background-size: 45px, 45px;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .footer-texto {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    ul {
+        background-position: calc(50% - 35px) 8px, calc(50% + 35px) 8px;
+        background-size: 38px, 38px;
+        padding-top: 65px;
+    }
+
+    ul li a:link,
+    ul li a:visited {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .h1E,
+    .h1D {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .resumoE,
+    .resumoD {
+        font-size: 13px;
+    }
+}
