@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3 - Carteira de Motorista</title>
+</head>
+<body>
+    <script>
+        // Idade mínima exigida no Brasil para tirar carteira de motorista
+        var IDADE_MINIMA = 18;
+
+        // Solicita o nome completo
+        var nome = prompt("Digite o seu nome completo:");
+
+        // Solicita a idade e converte para número inteiro
+        var idade = parseInt(prompt("Digite a sua idade:"));
+
+        // Verifica se possui idade suficiente
+        if (idade >= IDADE_MINIMA) {
+            alert(nome + ", você já POSSUI idade para tirar carteira.");
+        } else {
+            var anosFaltantes = IDADE_MINIMA - idade;
+            alert(nome + ", você ainda NÃO POSSUI idade para tirar carteira, ainda falta(m) " + anosFaltantes + " anos.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7 - Cor RGB</title>
+</head>
+<body>
+    <script>
+        // Função auxiliar para pedir um valor RGB válido (entre 0 e 255)
+        function pedirValorRGB(mensagem) {
+            var valor;
+            do {
+                valor = parseInt(prompt(mensagem + "\n(Valor deve estar entre 0 e 255)"));
+            } while (isNaN(valor) || valor < 0 || valor > 255);
+            return valor;
+        }
+
+        // Solicita os três valores RGB, nesta ordem
+        var r = pedirValorRGB("Digite o valor de R (vermelho):");
+        var g = pedirValorRGB("Digite o valor de G (verde):");
+        var b = pedirValorRGB("Digite o valor de B (azul):");
+
+        // Exibe o texto no corpo do documento com a cor informada
+        document.write("<p style='color: rgb(" + r + "," + g + "," + b + ");'>Fundamentos de Web Design II</p>");
+    </script>
+</body>
+</html>

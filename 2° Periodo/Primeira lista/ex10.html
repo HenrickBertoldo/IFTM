@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 10 - Nome Repetido X Vezes</title>
+</head>
+<body>
+    <script>
+        // Solicita um valor inteiro positivo maior que zero
+        var x;
+        do {
+            x = parseInt(prompt("Digite um valor inteiro positivo (maior que zero):"));
+        } while (isNaN(x) || x <= 0);
+
+        // Solicita o nome completo
+        var nome = prompt("Digite o seu nome completo:");
+
+        // Exibe o nome X vezes, cada um em uma linha diferente
+        for (var i = 1; i <= x; i++) {
+            document.write(nome + "<br>");
+        }
+    </script>
+</body>
+</html>

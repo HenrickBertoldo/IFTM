@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4 - Aprovação na Disciplina</title>
+</head>
+<body>
+    <script>
+        var PONTOS_APROVACAO = 60.0;
+
+        // Solicita as notas do 1º e 2º bimestres
+        var nota1 = parseFloat(prompt("Digite a nota do 1º bimestre:"));
+        var nota2 = parseFloat(prompt("Digite a nota do 2º bimestre:"));
+
+        // Calcula a soma das notas
+        var soma = nota1 + nota2;
+
+        // Verifica aprovação
+        if (soma >= PONTOS_APROVACAO) {
+            alert("Aluno APROVADO! Soma de pontos: " + soma);
+        } else {
+            var pontosFaltantes = PONTOS_APROVACAO - soma;
+            alert("Aluno REPROVADO! Faltaram " + pontosFaltantes.toFixed(1) + " pontos para a aprovação.");
+        }
+    </script>
+</body>
+</html>
