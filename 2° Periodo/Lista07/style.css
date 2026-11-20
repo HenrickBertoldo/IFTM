@@ -1,0 +1,36 @@
+/* Estilo Básico */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Classes para o resultado via JS */
+.valid {
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.invalid {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}

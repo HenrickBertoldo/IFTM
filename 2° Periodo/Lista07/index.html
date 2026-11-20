@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios - Expressões Regulares (IFTM)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Validador de Expressões Regulares</h2>
+    <form id="regexForm" onsubmit="event.preventDefault();">
+
+        <div>
+            <label>a) Data de nascimento:</label>
+            <input type="text" id="a" value="15/08/1990">
+            <button onclick="validar('a')">Validar</button>
+            <span id="res_a"></span>
+        </div>
+
+        <div>
+            <label>b) CPF (jMakWiFi):</label>
+            <input type="text" id="b" value="123.456.789-00">
+            <button onclick="validar('b')">Validar</button>
+            <span id="res_b"></span>
+        </div>
+
+        <div>
+            <label>c) Número de matrícula de um aluno:</label>
+            <input type="text" id="c" value="IFTM-123/456-A1">
+            <button onclick="validar('c')">Validar</button>
+            <span id="res_c"></span>
+        </div>
+
+        <div>
+            <label>d) Código de uma disciplina (v1):</label>
+            <input type="text" id="d" value="mT-12.345-iFtM">
+            <button onclick="validar('d')">Validar</button>
+            <span id="res_d"></span>
+        </div>
+
+        <div>
+            <label>e) Código de uma disciplina (v2):</label>
+            <input type="text" id="e" value="MT-98.765-iFtm">
+            <button onclick="validar('e')">Validar</button>
+            <span id="res_e"></span>
+        </div>
+
+        <div>
+            <label>f) Código de uma disciplina (v3):</label>
+            <input type="text" id="f" value="M T-12.345-I F T M">
+            <button onclick="validar('f')">Validar</button>
+            <span id="res_f"></span>
+        </div>
+
+        <div>
+            <label>g) Nome de campus do IFTM:</label>
+            <input type="text" id="g" value="IFTM campus Uberlândia Centro">
+            <button onclick="validar('g')">Validar</button>
+            <span id="res_g"></span>
+        </div>
+
+        <div>
+            <label>h) Telefone (Internacional):</label>
+            <input type="text" id="h" value="+55(34)98765-4321">
+            <button onclick="validar('h')">Validar</button>
+            <span id="res_h"></span>
+        </div>
+
+        <div>
+            <label>i) Telefone (Nacional):</label>
+            <input type="text" id="i" value="(34) 98765-4321">
+            <button onclick="validar('i')">Validar</button>
+            <span id="res_i"></span>
+        </div>
+
+        <div>
+            <label>j) Altura de uma pessoa:</label>
+            <input type="text" id="j" value="1.75">
+            <button onclick="validar('j')">Validar</button>
+            <span id="res_j"></span>
+        </div>
+
+        <div>
+            <label>k) Faturamento anual de uma empresa:</label>
+            <input type="text" id="k" value="R$1.500.478,10">
+            <button onclick="validar('k')">Validar</button>
+            <span id="res_k"></span>
+        </div>
+
+        <div>
+            <label>l) Cronômetro:</label>
+            <input type="text" id="l" value="23:59:59:99">
+            <button onclick="validar('l')">Validar</button>
+            <span id="res_l"></span>
+        </div>
+
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
